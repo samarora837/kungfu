@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="com.VO.RankVO" table="Rank">
+  
+   <id name="rank_num" type="java.lang.Integer">
+            <column name="RANK_NUM" />
+            <generator class="identity" />
+   </id>
+   <set name="rankreqSet" table="RANK_REQUIREMENT"
+				inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RANK_NUM" not-null="true" />
+            </key>
+            <one-to-many class="com.VO.RankReqVO" />
+   </set>
+ 
+   
+  <property name="rank_name">
+   <column name="RANK_NAME" />
+  </property>
+     
+  </class>
+</hibernate-mapping>

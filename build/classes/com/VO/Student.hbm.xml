@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="com.VO.StudentVO" table="StudentDetails">
+   
+   <id name="id" type="long" column="ID" >
+   <generator class="increment"/>
+   </id>
+ 
+    <property name="Student_Number">
+   <column name="STUDENT_NUM" />
+   </property>
+  
+
+  <property name="first_Name">
+   <column name="FIRST_NAME" /> </property>
+ 
+  
+  <property name="last_Name">
+   <column name="LAST_NAME" />
+  </property> 
+  
+  <property name="mobile">
+   <column name="CONTACT_NUMBER" />
+  </property>
+  
+   <property name="email">
+   <column name="EMAIL_ID" />
+  </property>
+  
+   <property name="street">
+   <column name="STREET" /> </property>
+   
+   <property name="city">
+   <column name="CITY" /> </property>
+   
+   <property name="province">
+   <column name="PROVINCE" /> </property>
+      
+   <property name="country">
+   <column name="COUNTRY" /> </property>
+   
+   <property name="postal_Code">
+   <column name="POSTAL_CODE" /> </property>
+ 
+   <property name="dateofbirth">
+   <column name="DOB" /> </property>
+ 
+   <property name="dateofjoining">
+   <column name="DOJ" /> </property>
+   
+   <property name="f_Num">
+   <column name="F_NUM" /> </property>
+   
+   <property name="father_Name">
+   <column name="FATHER_NAME" /> </property>
+   
+   <property name="father_Email">
+   <column name="FATHER_EMAIL" /> </property>
+   
+   <property name="father_Mobile">
+   <column name="FATHER_MOBILE" /> </property>
+   
+   <property name="m_Num">
+   <column name="M_NUM" /> </property>
+   
+   <property name="mother_Name">
+   <column name="MOTHER_NAME" /> </property>
+   
+   <property name="mother_Mobile">
+   <column name="MOTHER_MOBILE" /> </property>
+   
+   <property name="mother_Email">
+   <column name="MOTHER_EMAIL" /> </property>
+   
+    <property name="rank">
+   <column name="RANK" /> </property>
+ 
+ 
+  </class>
+</hibernate-mapping>

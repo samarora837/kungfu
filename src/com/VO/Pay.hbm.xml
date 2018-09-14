@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="com.VO.PayVO" table="Payment">
+   
+   <id name="id" type="long" column="ID" >
+   <generator class="increment"/>
+  </id>
+
+
+ 
+    <property name="item_Name">
+   <column name="ITEM_NAME" />
+   </property>
+
+	<property name="Student_Number">
+   <column name="STUDENT_NUM" />
+   </property>
+
+  <property name="payment_Date">
+   <column name="PAYMENT_DATE" /> </property>
+   
+  <property name="paid_Fees">
+   <column name="PAID_FEES" />
+  </property>
+  
+  <property name="comment">
+   <column name="COMMENT" />
+  </property>
+   
+  </class>
+</hibernate-mapping>

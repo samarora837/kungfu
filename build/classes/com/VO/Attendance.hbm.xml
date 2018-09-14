@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="com.VO.AttendanceVO" table="TimeSheet">
+   
+   <id name="id" type="long" column="ID" >
+   <generator class="increment"/>
+   </id>
+ 
+    <property name="attendance_date" type="java.util.Date">
+   <column name="ATTENDANCE_DATE" />
+   </property>
+
+   
+    <property name="student_Num">
+   <column name="STUDENT_NUM" />
+   </property>
+   
+    <property name="csvo">
+   <column name="CLASSS_LEVEL" />
+   </property>
+	  
+  </class>
+</hibernate-mapping>

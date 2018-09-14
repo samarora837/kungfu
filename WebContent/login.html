@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="./layout/style.css" type="text/css" />
+<script type="text/javascript" src="./layout/index.js"></script>
+
+
+<title>Login jsp</title>
+</head>
+
+<body>
+	<div class="panda">
+		<div class="ear"></div>
+		<div class="face">
+			<div class="eye-shade"></div>
+			<div class="eye-white">
+				<div class="eye-ball"></div>
+			</div>
+			<div class="eye-shade rgt"></div>
+			<div class="eye-white rgt">
+				<div class="eye-ball"></div>
+			</div>
+			<div class="nose"></div>
+			<div class="mouth"></div>
+		</div>
+		<div class="body"></div>
+		<div class="foot">
+			<div class="finger"></div>
+		</div>
+		<div class="foot rgt">
+			<div class="finger"></div>
+		</div>
+	</div>
+	<form action="LoginController" method="post">
+		<div class="hand"></div>
+		<div class="hand rgt"></div>
+		<h1>Stephanos Club Login</h1>
+		<div class="form-group">
+			<input required="required" name="username" class="form-control" /> <label
+				class="form-label">Username </label>
+		</div>
+		<div class="form-group">
+					
+			<input id="password" type="password" name="password"
+				required="required" class="form-control" /> <label
+				class="form-label">Password</label>
+				
+			<p class="alert">Invalid Credentials..!!</p>
+			<button class="btn">Login</button>
+
+		</div>
+
+	</form>
+</body>
+</html>
